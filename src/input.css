@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hello {
+  color: #94949486;
+  background-color: #ddb08cb9;
+  color: #0000006c;
+}
+.grid-column {
+  grid-template-columns: 5fr 3fr 3fr;
+}

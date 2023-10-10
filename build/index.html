@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./index.js" defer></script>
+    <title>Printable Miniatures</title>
+  </head>
+  <body
+    class="min-h-screen text-white flex flex-col gap-16 bg-center bg-cover font-['Poppins']"
+  >
+    <!-- header  -->
+    <header
+      class="flex flex-row justify-between w-[90%] mt-4 absolute left-2/4 -translate-x-2/4 z-10 max-w-[1400px] overflow-hidden"
+    >
+      <img src="../logo.png" alt="svg" class="self-center" />
+      <button class="md:hidden w-12" id="sidebar-open">
+        <div class="bg-white w-12 h-1 grid place-content-center text-4xl"></div>
+        <div class="bg-white w-12 h-1 grid place-content-center my-2"></div>
+        <div class="bg-white w-12 h-1 grid place-content-center"></div>
+      </button>
+      <nav class="max-md:hidden">
+        <ul class="flex flex-row justify-between w-[500px] text-md font-bold">
+          <li class="self-center flex justify-evenly w-[400px]">
+            <a href="#">Join as designer</a>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <button
+              class="bg-[goldenrod] rounded-lg px-10 py-4 hover:opacity-80 transition-all"
+            >
+              Login
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SIDEBAR -->
+
+    <section
+      class="md:hidden h-screen gap-4 text-black absolute right-0 z-10 bg-[#00000094] w-0 overflow-hidden transition-all flex flex-row-reverse justify-between"
+      id="sidebar"
+    >
+      <div class="flex flex-col gap-6 p-4 bg-white h-screen px-8 w-60">
+        <button
+          class="bg-[goldenrod] rounded-lg px-10 py-4 hover:opacity-80 transition-all self-start"
+        >
+          Login
+        </button>
+        <a href="#" class="self-start">Join as designer</a>
+        <a href="#" class="self-start">Pricing</a>
+      </div>
+      <button
+        id="sidebar-close"
+        class="hover:bg-[goldenrod] px-2 py-8 grid place-content-center m-5 self-start bg-white rounded-xl"
+      >
+        <div class="">
+          <div
+            class="bg-black w-12 h-1 grid place-content-center rotate-45 absolute"
+          ></div>
+          <div
+            class="bg-black w-12 h-1 grid place-content-center -rotate-45"
+          ></div>
+        </div>
+      </button>
+    </section>
+
+    <main>
+      <!-- first section  -->
+
+      <section
+        class="relative pt-36 pb-10 bg-gradient-to-r from-[#ddb18c] via-transparent to-transparent max-md:bg-[#ddb08c7e]"
+      >
+        <img
+          src="../bg.jpg"
+          alt="bg"
+          class="absolute -z-10 w-full h-full object-cover top-0"
+        />
+
+        <div class="z-10 max-w-[1200px] m-auto">
+          <div class="max-w-[900px]">
+            <h1
+              class="text-black text-5xl font-black w-[80%] ml-8 leading-normal mb-8"
+            >
+              Subscribe once, reach all. Platform of
+              <span class="bg-[goldenrod] text-white px-2 rounded-lg">3D</span>
+              Printable Miniatures
+            </h1>
+            <p class="w-[90%] ml-8 text-xl mb-14 text-black leading-relaxed">
+              Subscribe to Arenpi’s platform and unlock any 3d printable stl
+              models that releases every month by talented designers as much as
+              your plan offers. Don’t miss any model. Unlock anything you want.
+            </p>
+            <button
+              class="font-bold px-8 py-4 bg-[goldenrod] self-start ml-8 rounded-lg hover:opacity-80 transition-all"
+            >
+              Join us now
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-row justify-between w-[85%] m-auto bg-white text-black px-8 py-8 rounded-3xl border-[goldenrod] border-solid border-2 mt-36 max-w-[700px]"
+        >
+          <div class="flex flex-col gap-2">
+            <h3 class="font-bold text-[1.35rem]">Are you a designer ?</h3>
+            <p class="text-sm">See why you should join us.</p>
+          </div>
+          <button
+            class="text-white bg-black px-10 rounded-2xl font-bold hover:opacity-80 transition-all"
+          >
+            Let me check
+          </button>
+        </div>
+      </section>
+
+      <!-- 2nd Section -->
+
+      <section class="text-black py-24 w-[90%] m-auto">
+        <h1 class="text-center text-4xl font-black">How you start</h1>
+        <p class="text-center my-8 text-[#545252]">
+          You choose one of our plans and then you start to unlock the posts of
+          designers.
+        </p>
+
+        <!-- grid -->
+
+        <div
+          class="grid grid-col-2 grid-rows-2 grid-flow-col gap-9 mt-16 lg:grid-cols-4 lg:grid-rows-1"
+        >
+          <div
+            class="border-[goldenrod] transition-shadow hover:shadow-xl hover:cursor-pointer shadow-black border-solid rounded-3xl bg-[whitesmoke] p-6 flex flex-col gap-4 hover:border-2 hover:m-[-2px]"
+          >
+            <i
+              class="self-start p-4 rounded-full fa-2x fa fa-bell text-white bg-[dodgerblue]"
+            ></i>
+            <h3 class="font-bold text-xl lg:text-lg xl:text-xl">
+              Subscribe and choose your plan
+            </h3>
+            <p class="text-[#545252] lg:text-sm xl:text-base">
+              Every plan offers different number of unlock right. Choose
+              according to your budget and your need.
+            </p>
+          </div>
+          <div
+            class="border-[goldenrod] transition-shadow hover:shadow-xl hover:cursor-pointer shadow-black hover:border-2 border-solid rounded-3xl bg-[whitesmoke] p-6 flex flex-col gap-4 hover:m-[-2px]"
+          >
+            <i
+              class="self-start p-4 rounded-full fa-2x fa fa-cube text-white bg-pink-500"
+            ></i>
+            <h3 class="font-bold text-xl lg:text-lg xl:text-xl">
+              Never miss any model
+            </h3>
+            <p class="text-[#545252] lg:text-sm xl:text-base">
+              Even you can’t unlock everything you like on current month, you do
+              not miss anything. Previous months are always there waiting for
+              you
+            </p>
+          </div>
+          <div
+            class="border-[goldenrod] transition-shadow hover:shadow-xl hover:cursor-pointer shadow-black hover:border-2 border-solid rounded-3xl bg-[whitesmoke] p-6 flex flex-col gap-4 hover:m-[-2px]"
+          >
+            <i
+              class="self-start p-4 rounded-full fa-2x fa fa-ban text-white bg-emerald-400"
+            ></i>
+            <h3 class="font-bold text-xl lg:text-lg xl:text-xl">
+              Don’t buy the models you do not need
+            </h3>
+            <p class="text-[#545252] lg:text-sm xl:text-base">
+              You can decide every month which models you are going to unlock.
+              Do not buy the models you do not need.
+            </p>
+          </div>
+          <div
+            class="border-[goldenrod] transition-shadow hover:shadow-xl hover:cursor-pointer shadow-black hover:border-2 border-solid rounded-3xl bg-[whitesmoke] p-6 flex flex-col gap-4 hover:m-[-2px]"
+          >
+            <i
+              class="self-start p-4 rounded-full fa-2x fa fa-print text-white bg-yellow-500"
+            ></i>
+            <h3 class="font-bold text-xl lg:text-lg xl:text-xl">
+              Printability
+            </h3>
+            <p class="text-[#545252] lg:text-sm xl:text-base">
+              Check easily if resin compatible models are pre-supported or not.
+              And also check if FDM compatible models requires support or not.
+              We think about your printing experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3rd Section -->
+
+      <section
+        class="bg-[url('https://arenpi.com/new-style/images/awaits-min.png')] py-20 bg-center w-full"
+      >
+        <h1 class="text-center text-5xl font-black mb-20 max-md:text-3xl">
+          What awaits you ?
+        </h1>
+
+        <!-- grid -->
+        <div
+          class="overflow-hidden select-none dragable m-auto grid md:place-content-center px-4"
+        >
+          <div
+            class="grid grid-cols-3 gap-4 place-content-center max-w-[1000px] min-w-[740px] pt-8 max-md:active:cursor-grabbing max-md:hover:cursor-grab list-none"
+          >
+            <li class="backdrop-blur-2xl rounded-3xl">
+              <div
+                class="absolute w-full h-full bg-white rounded-3xl opacity-20"
+              ></div>
+              <i
+                class="fa fa-check absolute left-[50%] -translate-x-[50%] -translate-y-2/4 fa-2x bg-[dodgerblue] p-4 rounded-full"
+              ></i>
+              <p class="py-12 px-4 text-center text-lg font-bold">
+                Tens of designers and more coming soon
+              </p>
+            </li>
+            <li class="backdrop-blur-2xl rounded-3xl">
+              <div
+                class="absolute w-full h-full bg-white rounded-3xl opacity-20"
+              ></div>
+              <i
+                class="fa fa-check absolute left-[50%] -translate-x-[50%] -translate-y-2/4 fa-2x bg-pink-500 p-4 rounded-full"
+              ></i>
+
+              <p class="py-12 px-4 text-center text-lg font-bold">
+                Thousands of 3D printable miniature models - new models every
+                month
+              </p>
+            </li>
+            <li class="backdrop-blur-2xl rounded-3xl">
+              <div
+                class="absolute w-full h-full bg-white rounded-3xl opacity-20"
+              ></div>
+              <i
+                class="fa fa-check absolute left-[50%] -translate-x-[50%] -translate-y-2/4 fa-2x bg-[goldenrod] p-4 rounded-full"
+              ></i>
+
+              <p class="py-12 px-4 text-center text-lg font-bold">
+                A new platform which is only dedicated to 3D printable
+                miniatures
+              </p>
+            </li>
+          </div>
+        </div>
+
+        <button
+          class="font-bold px-8 py-4 bg-[goldenrod] rounded-lg block mx-auto mt-8 hover:opacity-80 transition-all"
+        >
+          See Pricing
+        </button>
+      </section>
+    </main>
+    <footer class="flex flex-col text-black">
+      <div class="grid gap-8 grid-column w-[90%] m-auto pb-12">
+        <div class="flex flex-col gap-4">
+          <img src="../logo.png" alt="svg" width="100" class="bg-black p-2" />
+          <p class="text-sm leading-6 text-[#545252]">
+            Arenpi is a subscription based online marketplace that allow
+            designers to sell their digital files of 3D Printable miniatures.
+          </p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h4 class="font-black">Company</h4>
+          <a href="#" class="text-sm text-[#545252]">Join as a designer</a>
+          <a href="#" class="text-sm text-[#545252]">Pricing</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h4 class="font-black">Useful Links</h4>
+          <a href="#" class="text-sm text-[#545252]">FAQs</a>
+          <a href="#" class="text-sm text-[#545252]">Terms of Use</a>
+          <a href="#" class="text-sm text-[#545252]">Privacy Policy</a>
+        </div>
+      </div>
+
+      <div
+        class="text-center border-t-[1px] border-[#93939386] border-solid py-4 text-sm text-[#545252]"
+      >
+        Copyright &copy;
+        <a href="#" class="text-[goldenrod] font-bold">Arenpi</a>
+        <span id="year-el"></span> All rights reserved
+      </div>
+    </footer>
+  </body>
+</html>
